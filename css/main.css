@@ -4,7 +4,7 @@
 
 #header {
     position: sticky;
-    /* width: 1200px; */
+    width: 1200px;
     margin: 0 auto;
     text-align: center;
     z-index: 999;
@@ -141,6 +141,8 @@
     position: relative;
 }
 
+
+
 .maincontent {
     position: absolute;
     top: 100px;
@@ -183,7 +185,6 @@
     color: #fff;
     transition: 0.5s;
 }
-
 
 
 
@@ -261,10 +262,27 @@
 }
 
 .thrcontent h2 {
+    display: block;
     font-size: 2rem;
     font-weight: 700;
-    margin: 100px 0 0 0;
+    margin: 100px 0 50px 0;
 }
+
+
+.thrcontent h2 {
+    opacity: 1;
+    transform: translate(0, 40px);
+    transition: 0.5s 0.5s;
+}
+
+.thrcontent h2.on {
+    opacity: 0;
+    transform: translate(0, 0);
+    transition: 0.5s 0.5s;
+}
+
+
+
 
 .thrcontent figure {
     flex: 1;
@@ -338,6 +356,19 @@
 .focontent p:hover:after {
     transform: scaleX(1);
 }
+
+.focontent h2 {
+    opacity: 1;
+    transform: translate(0, 11px);
+    transition: 1s 1s;
+}
+
+.focontent h2.on {
+    opacity: 0;
+    transform: translate(0, 0);
+    transition: 1s 1s;
+}
+
 
 .focontent .parent .box {
     position: absolute;
@@ -442,6 +473,20 @@
 }
 
 
+#toTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    display: none;
+}
+
+#toTop i {
+    background: rgb(107, 136, 114);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 20px;
+}
 
 
 /* footer */
